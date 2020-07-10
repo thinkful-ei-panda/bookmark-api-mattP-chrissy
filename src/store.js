@@ -1,14 +1,3 @@
-/**
-   [
-    {
-      title,
-      url,
-      description,
-      rating,
-    },
-  ]
-*/
-
 const bookmarks = [
 	{
 		id: '1234',
