@@ -1,6 +1,6 @@
 const express = require('express')
 const { v4: uuid } = require('uuid')
-const { PORT } = require('../config')
+
 const logger = require('../logger')
 const { bookmarks } = require('../store')
 
@@ -65,11 +65,9 @@ bookmarksRouter
 
 		if (!bookmark) {
 			logger.error(`Bookmark not found matching id ${id}`)
-			return res
-				.status(404)
-				.send({
-					error: `Bookmark not found matching id ${id}`,
-				})
+			return res.status(404).send({
+				error: `Bookmark not found matching id ${id}`,
+			})
 		}
 
 		res.json({ message: `Bookmark retrieved!`, bookmark })
