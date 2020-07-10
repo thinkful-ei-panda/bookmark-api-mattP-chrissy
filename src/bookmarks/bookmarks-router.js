@@ -64,13 +64,15 @@ bookmarksRouter
 		)
 
 		if (!bookmark) {
-			logger.error(`Bookmark not found`)
+			logger.error(`Bookmark not found matching id ${id}`)
 			return res
 				.status(404)
-				.send({ error: `Bookmark not found` })
+				.send({
+					error: `Bookmark not found matching id ${id}`,
+				})
 		}
 
-		res.json({ message: `Bookmark`, bookmark })
+		res.json({ message: `Bookmark retrieved!`, bookmark })
 	})
 	.delete((req, res) => {
 		const { id } = req.params

@@ -12,3 +12,12 @@
 {"message":"Bookmark not found","level":"error"}
 {"message":"Deletion successful. Bookmark with id: 1234 was deleted","level":"info"}
 {"message":"Deletion successful. Bookmark with id: 1234 was deleted","level":"info"}
+{"message":"Rating is not provided or is less than 1 or greater than 5","level":"error"}
+{"message":"Deletion successful. Bookmark with id: df277aee-5473-4c1a-9c4f-b1851dd8c347 was deleted","level":"info"}
+{"level":"error","message":""}
+{"message":"Bookmark not found","level":"error"}
+{"message":"Deletion successful. Bookmark with id: adfbc480-354f-4c1b-aeed-37f27d5339a2 was deleted","level":"info"}
+{"message":"Bookmark not found","level":"error"}
+{"message":"Bookmark not found matching id 12347","level":"error"}
+{"message":"Deletion successful. Bookmark with id: 1234 was deleted","level":"info"}
+{"level":"error","message":""}
