@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "node src/server.js",
 		"predeploy": "npm audit",
-		"deploy": "git push heriku master",
+		"deploy": "git push heroku master",
 		"test": "mocha --require test/setup.js",
 		"dev": "nodemon src/server.js"
 	},
