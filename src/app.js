@@ -8,11 +8,8 @@ const { NODE_ENV, API_KEY } = require('./config')
 
 // set up winston
 const logger = require('./logger')
-
 const bookmarksRouter = require('./bookmarks/bookmarks-router')
-
 const app = express()
-
 const morganOption = NODE_ENV === 'production' ? 'tiny' : 'common'
 
 app.use(morgan(morganOption))
