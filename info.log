@@ -1,0 +1,14 @@
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"No url or invalid format ('http://...')","level":"error"}
+{"message":"Rating is not provided or is less than 1 or greater than 5","level":"error"}
+{"message":"Rating is not provided or is less than 1 or greater than 5","level":"error"}
+{"message":"Bookmark not found","level":"error"}
+{"level":"error","message":""}
+{"message":"Bookmark not found","level":"error"}
+{"message":"Deletion successful. Bookmark with id: 1234 was deleted","level":"info"}
+{"message":"Deletion successful. Bookmark with id: 1234 was deleted","level":"info"}
