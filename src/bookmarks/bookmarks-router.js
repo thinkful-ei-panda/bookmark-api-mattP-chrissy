@@ -48,9 +48,8 @@ bookmarksRouter
 			rating,
 		}
 		bookmarks.push(bookmark)
-		res.send({
-			message: 'POST request to the homepage',
-			bookmark,
+		res.status(201).send({
+			message: `Item created with id: ${id}`,
 		})
 	})
 
@@ -70,7 +69,9 @@ bookmarksRouter
 			})
 		}
 
-		res.json({ message: `Bookmark retrieved!`, bookmark })
+		res.json({
+			data: bookmark,
+		})
 	})
 	.delete((req, res) => {
 		const { id } = req.params
@@ -85,15 +86,14 @@ bookmarksRouter
 				error: `Delete failed, no bookmark found matching id: ${id}`,
 			})
 		}
-		const deletedBookmark = bookmarks[index]
+
 		bookmarks.splice(index, 1)
 
 		logger.info(
 			`Deletion successful. Bookmark with id: ${id} was deleted`
 		)
-		res.send({
-			message: `Deleted bookmark id:${id}`,
-			deletedBookmark,
+		res.status(204).send({
+			message: `Deleted bookmark with id: ${id}`,
 		})
 	})
 
